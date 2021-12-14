@@ -1,0 +1,262 @@
+html {
+  background-color: #f0f0f0;
+  min-width: 400px;
+}
+
+
+.header{  
+  background-color: #2d3e52;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;  
+  z-index: 1;
+  margin: 0px 0px 0px 0px; 
+  height: 50px;
+}
+
+.header img{
+  height: 30px;
+  padding: 10px;
+}
+
+.main img{
+    padding-top: 10px;
+    margin-left:30px;
+    float:left;
+    height:100px;
+    z-index: 1;
+}
+
+.main{
+  background-color: #453225;
+  min-width: 400px;
+  min-height: 600x;
+  margin-top: 2%;
+  margin-left: 1%;
+  width: 30%;
+  height: 600px;
+  float:left;
+  border-radius:1% 1% 1% 1%;
+  box-shadow: 3px 3px 0px #AAAAAA;
+}
+
+
+.main h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size:36px;
+    color:#FFFFFF;
+    margin-left: 120px;
+    padding-top: 40px;
+    height: 30px;
+}
+
+.main h2{
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+    font-size:22px;
+    color: #FFFFFF;
+    margin-left: 0%;
+    padding: 50px 0px 0px 0px;
+    float:top;
+}
+
+
+.main h3{ 
+    background-color: #453225;
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+    color:#FFFFFF;
+    text-align: left;
+    margin-left: 10%;
+    padding-top: -20px;
+    width: 80%;
+    height: 60%;
+    float:top;
+}
+
+h1{
+    text-align: left;
+}
+
+h2{
+    text-align: left;
+}
+
+.demo{
+  min-height: 600px;
+  margin-top: 2%;
+  position: relative;
+  padding-left: 80px;
+  background-image: url("Ultra-processed-foods-photo.jpg");
+  background-size: cover;
+  background-color: #453225;
+  margin-left: 2%;
+  margin-right: auto;
+  height: 600px;
+  width: 60%;
+  float:left;
+  border-radius:1% 1% 1% 1%;
+  box-shadow: 3px 3px 0px #AAAAAA;
+}
+
+.demo h1{
+   
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding:60px 0px 2% 0px;
+  font-size:50px;
+  text-shadow: 1px 1px 0px #000000;
+
+}
+
+
+.demo h2{
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size:24px;
+  width:60%;
+  text-shadow: 1px 1px 0px #000000;
+}
+
+.demo label{
+   
+  font-family: "Sofia";
+  color: #FFFFFF;
+  font-size:24px;
+  font-weight: 600;
+  text-shadow: 1px 1px 0px #000000;
+}
+
+input{
+    padding-left:20px;
+    font-family: "Sofia";
+    color: #000000;
+    font-size:15px;
+    width: 350px;
+    height: 40px;
+    float:left;
+    border-radius:12px 0px 0px 12px;
+}
+
+.button {
+  display: inline-block;
+  border-radius:0px 12px 12px 0px;
+  background-color: #f4511e;
+  font-family:  'Oswald',sans-serif;
+  /* text-shadow: 2px 2px 0px #000000; */
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 0px;
+  transition: all 0.5s;
+  height: 40px;
+  width: 150px;
+  cursor: pointer;
+  float:left;  
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+#loaderlabel{
+  position: absolute;
+  left: 200px;
+  top: 410px;
+  z-index: 1;
+  font-family: 'Open Sans',sans-serif;
+  color: #FFFFFF;
+  font-size:20px;
+  font-weight: 600;  
+  animation: fade;
+    
+}
+
+@keyframes fade {
+  from{ z-index: 1;}
+to{ z-index: -1;}
+}
+
+#loader {
+  position: absolute;
+  left: 200px;
+  top: 470px;
+  z-index: 1;
+  margin: -75px 0 0 -75px;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+a:link {
+    color: #3498db;
+}
+a:hover {
+    color: #ff7700;
+}            
+a:active {
+    color: green;
+}
