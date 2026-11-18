@@ -145,16 +145,14 @@ function onClick(){
 async function init(){
 
     // Memanggil model tfjs
-    // model = await tf.loadLayersModel('http://127.0.0.1:5500/tfjs_model/model.json'); // Untuk VS Code Live Server
-    model = await tf.loadLayersModel('http://127.0.0.1:8887/tfjs_model/model.json');
+    model = await tf.loadLayersModel('./tfjs_model/model.json');
     isModelLoaded = true;
 
-    //Memanggil word_index
-    // const word_indexjson = await fetch('http://127.0.0.1:5500/word_index.json'); // Untuk VS Code Live Server
-    const word_indexjson = await fetch('http://127.0.0.1:8887/word_index.json'); 
+    // Memanggil word_index
+    const word_indexjson = await fetch('./word_index.json');
     word2index = await word_indexjson.json();
 
-    console.log(model.summary()); 
-    console.log('Model & Metadata Loaded Succesfully');
+    console.log(model.summary());
+    console.log('Model & Metadata Loaded Successfully');
 }
 // -----------------------------------
